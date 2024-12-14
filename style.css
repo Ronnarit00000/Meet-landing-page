@@ -516,7 +516,7 @@ select {
     
     .hero {
         padding-block-end: 4rem;
-        min-height: 31.25rem;
+        height: 30.5rem;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 0;
     }
