@@ -357,28 +357,28 @@ select {
 
 .primaryFooter .bgImage {
     grid-column: full-width;
-    background-repeat: no-repeat;
-    background-position-x: center;
     background-image: url(assets/desktop/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: center;
     background-size:260ch;
-    opacity: 0.75;
     position: relative;
 }
 
 .primaryFooter .bgImage::after {
-    z-index: -1;
+    z-index: 1;
     content: '';
     inset: 0;
     position: absolute;
     background-color: var(--clr-cyan-600);
-    mix-blend-mode: multiply;
+    opacity: 0.8;
 }
 
 .primaryFooter .footerDescription{
     padding-block:  4rem;
     width: min(100% - (var(--space-inline) * 2), 500px);
     margin-inline: auto;
-    z-index: 3;
+    z-index: 2;
     display: grid;
     row-gap: 1.5rem;
     align-items: start;
